@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import DemoForm from './components/DemoForm';
+import Footer from './components/Footer';
 
 function App() {
   const [isDemoFormOpen, setIsDemoFormOpen] = useState(false);
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Portfolio />
       <DemoForm isOpen={isDemoFormOpen} onClose={() => setIsDemoFormOpen(false)} />
+      <Footer />
     </div>
   );
 }

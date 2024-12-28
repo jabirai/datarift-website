@@ -35,7 +35,7 @@ export default function Navbar({ onDemoClick }: NavbarProps) {
             <div className="flex items-center space-x-8">
               <a href="#services" className="text-gray-300 hover:text-white transition-colors">Services</a>
               <a href="#portfolio" className="text-gray-300 hover:text-white transition-colors">Portfolio</a>
-              <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
+              {/* <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a> */}
               <button
                 onClick={onDemoClick}
                 className="px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white transition-colors"
@@ -63,7 +63,7 @@ export default function Navbar({ onDemoClick }: NavbarProps) {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="#services" className="block px-3 py-2 text-gray-300 hover:text-white">Services</a>
             <a href="#portfolio" className="block px-3 py-2 text-gray-300 hover:text-white">Portfolio</a>
-            <a href="#about" className="block px-3 py-2 text-gray-300 hover:text-white">About</a>
+            {/* <a href="#about" className="block px-3 py-2 text-gray-300 hover:text-white">About</a> */}
             <button
               onClick={() => {
                 onDemoClick();
