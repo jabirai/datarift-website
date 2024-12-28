@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     const mailOptions = {
       from: email,
       to: process.env.RECIPIENT_EMAIL, // The email where the form should be sent
-      subject: `Demo Request from ${name}`,
+      subject: `Demo Request from ${name}, ${email}`,
       text: `Company: ${company}\nService of Interest: ${serviceInterest}\nMessage: ${message}`,
     };
 
