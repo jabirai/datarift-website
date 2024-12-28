@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, MessageSquare, LineChart, DollarSign } from 'lucide-react';
+import { Brain, LineChart, DollarSign, File, MessageCircle, Phone, ClipboardList , Package , UserCheck    } from 'lucide-react';
 
 const projects = [
   {
@@ -7,23 +7,59 @@ const projects = [
     title: "Personality Trait Analysis",
     description: "Advanced deep learning algorithm that analyzes customer behavior through conversation patterns, enabling predictive personality insights.",
     tags: ["Deep Learning", "NLP", "Behavioral Analysis"],
-    highlight: "98% accuracy in trait prediction"
+    highlight: "98% accuracy in trait predictions."
   },
   {
     icon: <DollarSign className="h-12 w-12" />,
     title: "Financial Bot",
-    description: "Sophisticated LLM-powered bot handling complex financial transactions and ledger management with enterprise-grade security.",
+    description: "Sophisticated LLM-powered bot handling complex financial transactions and ledger management with enterprise-grade security along with user friendliness.",
     tags: ["LLM", "FinTech", "Automation"],
-    highlight: "Processes $2M+ transactions daily"
+    highlight: "Handles $2M+ in daily transactions."
   },
   {
-    icon: <MessageSquare className="h-12 w-12" />,
+    icon: <MessageCircle  className="h-12 w-12" />,
     title: "Sales Assistant Bot",
     description: "AI-driven chatbot leveraging LLM technology to streamline sales processes and provide instant support to agents and customers.",
     tags: ["Sales", "Customer Support", "LLM"],
-    highlight: "45% increase in conversion rate"
+    highlight: "Boosts conversion rates by 45%."
+  },
+  {
+    icon: <Phone  className="h-12 w-12" />,
+    title: "WhatsApp Insight Chatbot",
+    description: "An intelligent chatbot that integrates with your database, providing instant insights and results directly via WhatsApp.",
+    tags: ["Chatbot", "WhatsApp", "Data Insights"],
+    highlight: "Delivers real-time data insights via chat."
+  },
+  {
+    icon: <File className="h-12 w-12" />,
+    title: "Invoice Reader",
+    description: "Advanced technology that automates the extraction and conversion of financial reports into system-compatible formats.",
+    tags: ["OCR", "LLM", "Financial Reporting"],
+    highlight: "Reduces tax filing work by 40%."
+  },
+  {
+    icon: <ClipboardList  className="h-12 w-12" />,
+    title: "Scraper Analytics",
+    description: "Automates competitor website scraping to generate market-driven sales packages, keeping your business ahead of the curve.",
+    tags: ["Scraping", "LLM", "API"],
+    highlight: "Adapts 30% faster to market changes."
+  },
+  {
+    icon: <Package  className="h-12 w-12" />,
+    title: "Recommendation Engine",
+    description: "AI-driven recommendation system for ecommerce platforms that analyzes user data and compares vendor offers to suggest the best deals for customers.",
+    tags: ["Recommendation Systems", "Ecommerce", "Data Science"],
+    highlight: "Increases customer engagement by 25%."
+  },
+  {
+    icon: <UserCheck  className="h-12 w-12" />,
+    title: "AI Chatbot Sales Agent",
+    description: "Developed a chatbot that extracts relevant context from previous chats and uses RAG (retrieval-augmented generation) to generate real-time, informed responses, acting as a mini sales agent.",
+    tags: ["Chatbot", "AI", "Sales", "RAG"],
+    highlight: "Automates 70% of customer inquiries."
   }
 ];
+
 
 export default function Portfolio() {
   return (
