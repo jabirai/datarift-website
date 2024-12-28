@@ -23,12 +23,12 @@ export default function DemoForm({ isOpen, onClose }: DemoFormProps) {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('/api/sendEmail', {
+      const response = await fetch('/api/sendEmail', { // Send data to Vercel API route
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData), // Send form data
       });
 
       if (response.ok) {
@@ -68,7 +68,8 @@ export default function DemoForm({ isOpen, onClose }: DemoFormProps) {
         <h2 className="text-2xl font-bold mb-6">Schedule a Demo</h2>
         
         <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
+          {/* Form fields for name, email, company, serviceInterest, message */}
+          <div>
             <label className="block text-sm font-medium text-gray-300 mb-2">
               Name
             </label>
@@ -139,6 +140,7 @@ export default function DemoForm({ isOpen, onClose }: DemoFormProps) {
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             />
           </div>
+
           <button
             type="submit"
             disabled={isSubmitting}
