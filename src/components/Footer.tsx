@@ -55,14 +55,14 @@ function Footer() {
                             Quick Links
                         </h3>
                         <ul className="space-y-2">
-                            <li>
+{/*                             <li>
                                 <a
                                     href="#about"
                                     className="hover:text-purple-400 transition"
                                 >
                                     About Us
                                 </a>
-                            </li>
+                            </li> */}
                             <li>
                                 <a
                                     href="#services"
@@ -73,20 +73,20 @@ function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#contact"
+                                    href="#portfolio"
                                     className="hover:text-purple-400 transition"
                                 >
-                                    Contact
+                                    Portfolio
                                 </a>
                             </li>
-                            <li>
+{/*                             <li>
                                 <a
                                     href="#careers"
                                     className="hover:text-purple-400 transition"
                                 >
                                     Careers
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
 
