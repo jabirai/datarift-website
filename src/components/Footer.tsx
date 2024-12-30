@@ -32,23 +32,23 @@ function Footer() {
                     {/* Logo and Short Description */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-3">
-{/*                             <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center"> */}
-{/*                                 <img
+                            <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center">
+                                <img
                                     src="/path-to-your-logo.svg"
                                     alt="Datarift Logo"
                                     className="h-8 w-8"
-                                /> */}
+                                />
                                 
-{/*                             </div>
+                            </div>
                             <span className="text-white text-2xl font-extrabold">
                                 Datarift
-                            </span> */}
-                            <div className="flex items-center">
+                            </span>
+{/*                             <div className="flex items-center">
                                 <a href="/" className="flex items-center space-x-2">
                                   <Brain className="h-8 w-8 text-purple-500" />
                                   <span className="text-white font-bold text-xl">Datarift</span>
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                         <p className="text-gray-400">
                             Building intelligent AI-driven solutions that empower
