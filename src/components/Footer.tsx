@@ -151,9 +151,9 @@ function Footer() {
                         </a> */}
                         <a
                             href="https://www.linkedin.com/company/datarift-ai"
-                            className="h-10 w-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-purple-500 transition"
+                            className="flex items-center justify-center"
                         >
-                            <span className="text-white font-bold">Linkedin</span>
+                            <span className="text-white font-bold bg-gray-800 hover:bg-purple-500 transition">Linkedin</span>
                         </a>
 {/*                         <a
                             href="#"
