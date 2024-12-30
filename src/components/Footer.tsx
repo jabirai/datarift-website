@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Brain} from 'lucide-react';
 
 function Footer() {
     const [email, setEmail] = useState("");
