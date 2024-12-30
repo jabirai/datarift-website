@@ -50,14 +50,14 @@ function Footer() {
                             Quick Links
                         </h3>
                         <ul className="space-y-2">
-{/*                             <li>
+                            <li>
                                 <a
-                                    href="#about"
+                                    href="#"
                                     className="hover:text-purple-400 transition"
                                 >
-                                    About Us
+                                    Home
                                 </a>
-                            </li> */}
+                            </li>
                             <li>
                                 <a
                                     href="#services"
