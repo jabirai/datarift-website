@@ -137,20 +137,20 @@ function Footer() {
                         © 2024 Datarift. All rights reserved.
                     </p>
                     <div className="flex space-x-4">
-                        <a
+{/*                         <a
                             href="#"
                             className="h-10 w-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-purple-500 transition"
                         >
                             <span className="text-white font-bold">F</span>
-                        </a>
-                        <a
+                        </a> */}
+{/*                         <a
                             href="#"
                             className="h-10 w-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-purple-500 transition"
                         >
                             <span className="text-white font-bold">T</span>
-                        </a>
+                        </a> */}
                         <a
-                            href="#"
+                            href="https://www.linkedin.com/company/datarift-ai"
                             className="h-10 w-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-purple-500 transition"
                         >
                             <span className="text-white font-bold">L</span>
