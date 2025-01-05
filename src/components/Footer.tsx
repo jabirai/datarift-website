@@ -159,6 +159,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
+        <script src="https://cdn.jsdelivr.net/gh/edenai/yodabot@e4f753f/embed.js?project=8de2ec80-7614-49a4-9ed2-097967246877&provider=openai&model=gpt-4"></script>
         </footer>
     );
 }
