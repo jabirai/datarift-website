@@ -8,27 +8,34 @@ import Footer from './components/Footer';
 
 const trustStats = [
   { value: '24/7', label: 'lead response coverage' },
-  { value: '2x', label: 'faster follow-up cycles' },
-  { value: '70%', label: 'manual tasks automated' },
-  { value: '1 week', label: 'to launch a focused pilot' }
+  { value: '2x', label: 'faster follow-up' },
+  { value: '70%', label: 'less repetitive admin' },
+  { value: '1 wk', label: 'pilot launch window' }
 ];
 
 const offerPillars = [
   {
-    title: 'Lead response systems',
-    text: 'Capture inquiries and respond instantly across WhatsApp, web forms, and chat channels before prospects go cold.',
+    title: 'Respond to leads faster',
+    text: 'Capture inquiries and respond instantly before interest cools off or your competitor gets the call first.',
     accent: 'from-purple-500/20 to-pink-500/20'
   },
   {
-    title: 'Sales automation',
-    text: 'Qualify leads, answer common objections, and keep the sales pipeline moving without constant manual effort.',
+    title: 'Keep sales moving',
+    text: 'Automate follow-ups, answer common questions, and qualify prospects without constant manual effort.',
     accent: 'from-blue-500/20 to-cyan-500/20'
   },
   {
-    title: 'Operational workflows',
-    text: 'Automate repetitive admin tasks, document processing, and reporting so your team focuses on revenue.',
+    title: 'Reduce admin drag',
+    text: 'Cut repetitive work, document handling, and reporting tasks so your team can focus on growth.',
     accent: 'from-green-500/20 to-emerald-500/20'
   }
+];
+
+const proofPoints = [
+  'Fewer missed inquiries',
+  'Faster sales follow-up',
+  'Less manual admin work',
+  'Clearer operational flow'
 ];
 
 const processSteps = [
@@ -62,9 +69,9 @@ function App() {
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-14">
-            <p className="text-sm uppercase tracking-[0.2em] text-purple-400 mb-4">Why businesses choose us</p>
+            <p className="text-sm uppercase tracking-[0.2em] text-purple-400 mb-4">What Datarift solves</p>
             <h2 className="text-3xl md:text-4xl font-bold">
-              We build <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">practical AI systems</span> that remove bottlenecks.
+              More replies. <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Less manual work.</span> Better sales momentum.
             </h2>
           </div>
 
@@ -88,9 +95,9 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-purple-400 mb-4">How it works</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-purple-400 mb-4">How we work</p>
               <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                You do not need a huge AI project to start seeing value.
+                Start with one real bottleneck, then scale from there.
               </h2>
 
               <div className="space-y-5">
@@ -123,6 +130,48 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl border border-purple-500/25 bg-gradient-to-r from-purple-500/10 via-black to-pink-500/10 p-8 md:p-12">
+            <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-10 items-center">
+              <div>
+                <p className="text-sm uppercase tracking-[0.2em] text-purple-300 mb-4">Why businesses contact Datarift</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">You do not need a giant AI project to start seeing results.</h2>
+                <p className="text-lg text-gray-300 max-w-xl">
+                  The fastest wins usually come from fixing one obvious bottleneck: slow replies, missed inquiries, or too much repetitive admin.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                {proofPoints.map((point) => (
+                  <div key={point} className="rounded-2xl border border-gray-700 bg-black/40 px-4 py-5 text-sm font-medium text-gray-200">
+                    {point}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gradient-to-b from-black to-gray-950">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm uppercase tracking-[0.2em] text-purple-400 mb-4">Ready to explore the fit?</p>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            See where your business is losing time or leads.
+          </h2>
+          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+            Book a short call and we will identify one practical automation opportunity you could act on immediately.
+          </p>
+          <button
+            onClick={() => setIsDemoFormOpen(true)}
+            className="px-8 py-4 bg-purple-600 hover:bg-purple-700 rounded-lg font-medium transition-all"
+          >
+            Book a free 15-minute audit
+          </button>
         </div>
       </section>
 

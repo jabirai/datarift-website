@@ -24,16 +24,16 @@ export default function Hero({ onDemoClick }: HeroProps) {
         <div className="text-center space-y-8 max-w-3xl mx-auto">
           <div className="flex items-center justify-center space-x-2 text-purple-400">
             <Brain className="h-6 w-6" />
-            <span className="text-sm font-medium">AI automation for growing businesses</span>
+            <span className="text-sm font-medium">AI automation for businesses losing leads</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-            Turn leads, follow-ups, and admin work
-            <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"> into revenue</span>
+            Turn missed leads into
+            <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"> booked calls</span>
           </h1>
 
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            We build AI-powered systems that reply faster, qualify leads, automate repetitive work, and help businesses close more deals without adding more team overhead.
+            Datarift builds AI systems that answer inquiries instantly, follow up consistently, and automate repetitive work so your team can focus on revenue.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -41,14 +41,14 @@ export default function Hero({ onDemoClick }: HeroProps) {
               onClick={onDemoClick}
               className="px-8 py-4 bg-purple-600 hover:bg-purple-700 rounded-lg font-medium flex items-center space-x-2 transition-all"
             >
-              <span>Get a free automation audit</span>
+              <span>Book a free 15-min audit</span>
               <ArrowRight className="h-5 w-5" />
             </button>
             <a
               href="#services"
               className="px-8 py-4 border border-gray-700 hover:border-purple-500 rounded-lg font-medium transition-all"
             >
-              View solutions
+              See what we automate
             </a>
           </div>
         </div>
@@ -58,18 +58,18 @@ export default function Hero({ onDemoClick }: HeroProps) {
           {[
             {
               icon: <Bot className="h-6 w-6" />,
-              title: "Faster lead response",
-              description: "AI assistants that reply instantly, qualify prospects, and book calls without delay."
+              title: "Instant lead response",
+              description: "Reply in seconds, qualify prospects, and keep conversations moving before interest fades."
             },
             {
               icon: <Sparkles className="h-6 w-6" />,
-              title: "Workflow automation",
-              description: "Connect your tools, automate repetitive tasks, and reduce manual admin across your team."
+              title: "Consistent follow-up",
+              description: "Automate reminders, message sequences, and sales touchpoints without manual chasing."
             },
             {
               icon: <Shield className="h-6 w-6" />,
-              title: "Business-ready systems",
-              description: "Practical AI solutions designed for real operations, teams, and measurable outcomes."
+              title: "Less manual admin",
+              description: "Reduce repetitive tasks, reporting work, and operational bottlenecks across the business."
             }
           ].map((feature, index) => (
             <div key={index} className="p-6 rounded-xl border border-gray-800 hover:border-purple-500 transition-all">
