@@ -65,8 +65,8 @@ export default function DemoForm({ isOpen, onClose }: DemoFormProps) {
           <X className="h-6 w-6" />
         </button>
 
-        <h2 className="text-2xl font-bold mb-6">Schedule a Demo</h2>
-        
+        <h2 className="text-2xl font-bold mb-6">Request an automation audit</h2>
+
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Form fields for name, email, company, serviceInterest, message */}
           <div>
@@ -119,12 +119,12 @@ export default function DemoForm({ isOpen, onClose }: DemoFormProps) {
               onChange={(e) => setFormData({ ...formData, serviceInterest: e.target.value })}
             >
               <option value="">Select a service</option>
-              <option value="llm">Custom LLM Development</option>
-              <option value="assistant">Intelligent Virtual Assistants</option>
-              <option value="analytics">Predictive Analytics</option>
-              <option value="neural">Neural Network Solutions</option>
-              <option value="integration">AI Integration Services</option>
-              <option value="data">Data Intelligence</option>
+              <option value="lead-response">Lead response automation</option>
+              <option value="sales-bot">Sales assistant bot</option>
+              <option value="analytics">AI analytics dashboard</option>
+              <option value="workflow">Workflow automation</option>
+              <option value="document">Document processing</option>
+              <option value="other">Other automation need</option>
             </select>
           </div>
 

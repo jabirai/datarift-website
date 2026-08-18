@@ -10,7 +10,7 @@ export default function Hero({ onDemoClick }: HeroProps) {
     <div className="relative overflow-hidden bg-black text-white">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-black" />
-      
+
       {/* Animated grid background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
@@ -24,31 +24,31 @@ export default function Hero({ onDemoClick }: HeroProps) {
         <div className="text-center space-y-8 max-w-3xl mx-auto">
           <div className="flex items-center justify-center space-x-2 text-purple-400">
             <Brain className="h-6 w-6" />
-            <span className="text-sm font-medium">Enterprise AI Solutions</span>
+            <span className="text-sm font-medium">AI automation for growing businesses</span>
           </div>
-          
+
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-            Transform Your Business with
-            <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"> AI Innovation</span>
+            Turn leads, follow-ups, and admin work
+            <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"> into revenue</span>
           </h1>
-          
+
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Leverage the power of custom LLMs, deep learning, and advanced AI solutions to revolutionize your business processes and drive growth.
+            We build AI-powered systems that reply faster, qualify leads, automate repetitive work, and help businesses close more deals without adding more team overhead.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={onDemoClick}
               className="px-8 py-4 bg-purple-600 hover:bg-purple-700 rounded-lg font-medium flex items-center space-x-2 transition-all"
             >
-              <span>Schedule Demo</span>
+              <span>Get a free automation audit</span>
               <ArrowRight className="h-5 w-5" />
             </button>
             <a
               href="#services"
               className="px-8 py-4 border border-gray-700 hover:border-purple-500 rounded-lg font-medium transition-all"
             >
-              Explore Services
+              View solutions
             </a>
           </div>
         </div>
@@ -58,18 +58,18 @@ export default function Hero({ onDemoClick }: HeroProps) {
           {[
             {
               icon: <Bot className="h-6 w-6" />,
-              title: "Custom LLM Solutions",
-              description: "Tailored language models designed specifically for your industry and use cases"
+              title: "Faster lead response",
+              description: "AI assistants that reply instantly, qualify prospects, and book calls without delay."
             },
             {
               icon: <Sparkles className="h-6 w-6" />,
-              title: "AI Integration",
-              description: "Seamless integration of AI capabilities into your existing systems"
+              title: "Workflow automation",
+              description: "Connect your tools, automate repetitive tasks, and reduce manual admin across your team."
             },
             {
               icon: <Shield className="h-6 w-6" />,
-              title: "Enterprise Security",
-              description: "Bank-grade security protocols to protect your data and models"
+              title: "Business-ready systems",
+              description: "Practical AI solutions designed for real operations, teams, and measurable outcomes."
             }
           ].map((feature, index) => (
             <div key={index} className="p-6 rounded-xl border border-gray-800 hover:border-purple-500 transition-all">
